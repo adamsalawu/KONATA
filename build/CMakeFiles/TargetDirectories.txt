@@ -1,0 +1,3 @@
+C:/Aether/RisingStar/KONATA/build/CMakeFiles/KONATA.dir
+C:/Aether/RisingStar/KONATA/build/CMakeFiles/ALL_BUILD.dir
+C:/Aether/RisingStar/KONATA/build/CMakeFiles/ZERO_CHECK.dir

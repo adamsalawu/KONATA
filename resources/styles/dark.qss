@@ -1,0 +1,157 @@
+/* KONATA 0.1A — professional dark master layout. Restrained, flat, no gradients. */
+
+QMainWindow#KonataMainWindow {
+    background: #1e1e1e;
+}
+
+QWidget#KonataCentral {
+    background: #1e1e1e;
+}
+
+QMenuBar {
+    background: #252526;
+    color: #cccccc;
+    border-bottom: 1px solid #333333;
+    padding: 2px;
+}
+
+QMenuBar::item:selected {
+    background: #333333;
+    color: #ffffff;
+}
+
+QMenu {
+    background: #252526;
+    color: #cccccc;
+    border: 1px solid #3e3e42;
+}
+
+QMenu::item:selected {
+    background: #094771;
+    color: #ffffff;
+}
+
+QToolBar#KonataMainToolBar {
+    background: #252526;
+    border-bottom: 1px solid #333333;
+    spacing: 4px;
+    padding: 3px;
+}
+
+QToolBar QToolButton {
+    color: #cccccc;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 4px 10px;
+}
+
+QToolBar QToolButton:disabled {
+    color: #6d6d6d;
+}
+
+QToolBar QToolButton:hover:!pressed {
+    background: #333333;
+    border: 1px solid #3e3e42;
+}
+
+QSplitter::handle {
+    background: #1e1e1e;
+}
+
+QSplitter::handle:horizontal {
+    width: 6px;
+}
+
+QSplitter::handle:vertical {
+    height: 6px;
+}
+
+QSplitter::handle:hover {
+    background: #333333;
+}
+
+/* Panels share a flat bordered container look. */
+QWidget#KonataProjectPanel,
+QWidget#KonataInspectorPanel,
+QWidget#KonataPreviewArea,
+QWidget#KonataTimelinePanel {
+    background: #252526;
+    border: 1px solid #333333;
+}
+
+QLabel#PanelHeader {
+    background: #2d2d30;
+    color: #9d9d9d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    border-bottom: 1px solid #333333;
+}
+
+QTreeWidget#ProjectTree {
+    background: #252526;
+    color: #cccccc;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+QTreeWidget#ProjectTree::item {
+    padding: 4px 6px;
+}
+
+QTreeWidget#ProjectTree::item:selected {
+    background: #094771;
+    color: #ffffff;
+}
+
+QWidget#PreviewCenter {
+    background: #1e1e1e;
+    border-top: 1px solid #333333;
+}
+
+QLabel#PreviewTitle {
+    color: #d4d4d4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+QLabel#PreviewSubtitle {
+    color: #858585;
+    font-size: 12px;
+}
+
+QWidget#InspectorBody {
+    background: #252526;
+}
+
+QLabel#InspectorEmpty {
+    color: #d4d4d4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QLabel#InspectorHint {
+    color: #858585;
+    font-size: 12px;
+}
+
+QLabel#TimelinePlaceholder {
+    background: #1e1e1e;
+    color: #858585;
+    font-size: 12px;
+    border-top: 1px solid #333333;
+}
+
+QStatusBar#KonataStatusBar {
+    background: #252526;
+    color: #9d9d9d;
+    border-top: 1px solid #333333;
+    font-size: 12px;
+}
+
+QMessageBox {
+    background: #252526;
+    color: #cccccc;
+}
