@@ -155,3 +155,331 @@ QMessageBox {
     background: #252526;
     color: #cccccc;
 }
+
+/* 0.1D authoring controls: flat dark form elements matching panel chrome. */
+QLineEdit,
+QPlainTextEdit,
+QTextEdit,
+QComboBox,
+QListWidget {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3e3e42;
+    padding: 4px 6px;
+    font-size: 13px;
+}
+
+QLineEdit:focus,
+QPlainTextEdit:focus,
+QTextEdit:focus,
+QComboBox:focus,
+QListWidget:focus {
+    border: 1px solid #094771;
+}
+
+QLineEdit:disabled,
+QPlainTextEdit:disabled,
+QTextEdit:disabled,
+QComboBox:disabled,
+QListWidget:disabled {
+    background: #252526;
+    color: #6d6d6d;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background: #252526;
+    color: #cccccc;
+    selection-background-color: #094771;
+}
+
+QPushButton {
+    background: #2d2d30;
+    color: #cccccc;
+    border: 1px solid #3e3e42;
+    padding: 4px 12px;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    background: #333333;
+}
+
+QPushButton:pressed {
+    background: #094771;
+    color: #ffffff;
+}
+
+QPushButton:disabled {
+    color: #6d6d6d;
+}
+
+QListWidget::item {
+    padding: 3px 4px;
+}
+
+QListWidget::item:selected {
+    background: #094771;
+    color: #ffffff;
+}
+
+/* 0.2A renderer rows (0.2C.1: frames are transparent packing; the bubble
+   widgets carry the resolved background + corner radius). */
+QWidget#RenderTitleBar {
+    background: #252526;
+    border-bottom: 1px solid #333333;
+}
+
+QLabel#RenderConvTitle {
+    color: #d4d4d4;
+    font-weight: 600;
+}
+
+QLabel#RenderBack {
+    color: #9d9d9d;
+    font-size: 22px;
+}
+
+QLabel#RenderHeaderAvatar {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    color: #9d9d9d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QLabel#RenderParticipants {
+    color: #858585;
+    font-size: 12px;
+}
+
+QScrollArea#RenderScroll,
+QWidget#RenderRows {
+    background: #1e1e1e;
+    border: none;
+}
+
+QWidget#RenderRow,
+QWidget#RenderRowSystem {
+    background: transparent;
+    border: none;
+}
+
+/* Bubble/content type sizes come from design tokens via QFont; colors stay
+   here for chrome, bubble fills arrive inline from the render model. */
+QLabel#RenderAuthor {
+    color: #9d9d9d;
+    font-weight: 600;
+}
+
+/* Bubble text color arrives via palette from the render model. */
+
+QWidget#RenderBubble,
+QWidget#RenderBubbleOutgoing {
+    border: none;
+}
+
+QLabel#RenderFallback {
+    color: #858585;
+    font-size: 12px;
+}
+
+QLabel#RenderEmpty {
+    color: #858585;
+    font-size: 12px;
+}
+
+/* 0.2A.1 avatars + image boxes: flat, neutral, no effects. */
+QLabel#RenderAvatar {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    color: #9d9d9d;
+    font-weight: 600;
+}
+
+QWidget#RenderImageBox {
+    background: #1e1e1e;
+    border: 1px solid #333333;
+}
+
+QWidget#RenderImageRow {
+    background: transparent;
+    border: none;
+}
+
+QLabel#RenderImageThumb {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    color: #858585;
+    font-size: 12px;
+}
+
+/* 0.2B screen badge: neutral pipeline readout, not app chrome. */
+QLabel#RenderScreenBadge {
+    color: #6d6d6d;
+    font-size: 11px;
+}
+
+/* 0.2C.1 composer foundation: flat rounded entry + affordances. */
+QWidget#RenderComposer {
+    background: #252526;
+    border-top: 1px solid #333333;
+}
+
+QLineEdit#RenderComposerField {
+    background: #1e1e1e;
+    border: 1px solid #3e3e42;
+    border-radius: 16px;
+    color: #d4d4d4;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+QPushButton#RenderComposerAttach,
+QPushButton#RenderComposerSend {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    border-radius: 16px;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+QPushButton#RenderComposerAttach:disabled,
+QPushButton#RenderComposerSend:disabled {
+    color: #6d6d6d;
+}
+
+/* Canvas bar: aspect controls (preview chrome, not app skin) */
+QWidget#CanvasBar {
+    background: #252526;
+    border-bottom: 1px solid #333333;
+}
+
+QLabel#CanvasLabel, QLabel#CanvasXLabel {
+    color: #9d9d9d;
+    font-size: 12px;
+}
+
+QComboBox#CanvasAspectCombo, QSpinBox#CanvasWidthSpin, QSpinBox#CanvasHeightSpin {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3e3e42;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+/* Export dialog: dark professional */
+QDialog#ExportDialog {
+    background: #252526;
+}
+
+QDialog#ExportDialog QLabel {
+    color: #cccccc;
+}
+
+QDialog#ExportDialog QComboBox, QDialog#ExportDialog QSpinBox {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3e3e42;
+    padding: 4px 6px;
+}
+
+/* 0.2C.2 phone shell + screens: flat surfaces, icon labels unstyled. */
+QWidget#PhoneViewport {
+    background: #000000;
+    border: 1px solid #333333;
+}
+
+QWidget#ScreenSwitcher QPushButton {
+    background: #2d2d30;
+    color: #9d9d9d;
+    border: 1px solid #3e3e42;
+    padding: 3px 12px;
+    font-size: 12px;
+}
+
+QWidget#ScreenSwitcher QPushButton:checked {
+    background: #094771;
+    color: #ffffff;
+}
+
+QLabel#RenderHeaderAvatar,
+QLabel#RenderListAvatar,
+QLabel#RenderProfileAvatar {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    color: #9d9d9d;
+    font-weight: 600;
+}
+
+QLabel#RenderListTitle {
+    color: #d4d4d4;
+}
+
+QLabel#RenderListName {
+    color: #d4d4d4;
+}
+
+QLabel#RenderListTime,
+QLabel#RenderListPreview,
+QLabel#RenderProfileStatus,
+QLabel#RenderTimestamp {
+    color: #858585;
+}
+
+QLabel#RenderProfileName {
+    color: #d4d4d4;
+}
+
+QWidget#RenderListRow {
+    background: transparent;
+    border: none;
+}
+
+QWidget#RenderSeparator {
+    background: #333333;
+    border: none;
+}
+
+QLabel#RenderDaySeparator {
+    background: #2d2d30;
+    border: 1px solid #3e3e42;
+    border-radius: 9px;
+    color: #9d9d9d;
+    padding: 2px 10px;
+}
+
+QPushButton#RenderProfileAction:disabled {
+    color: #9d9d9d;
+}
+
+/* Chat authoring bar: KONATA tool chrome below the app composer. */
+QWidget#ChatAddBar {
+    background: #252526;
+    border-top: 1px solid #333333;
+}
+
+QPushButton#ChatAddButton {
+    background: #094771;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+QPushButton#ChatAddButton:hover {
+    background: #0a5c96;
+}
+
+QComboBox#ChatAddType {
+    background: #1e1e1e;
+    border: 1px solid #3e3e42;
+    color: #cccccc;
+    padding: 5px 8px;
+    font-size: 13px;
+}
